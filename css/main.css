@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: arial;
+}
+
+.NavBar{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 2px #ccc;
+    /* height: 44px; */
+}
+
+.NavBar li{
+    overflow: hidden;
+    float: left;
+    /* padding: 14px 16px; */
+}
+
+.NavBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.NavBar li a:hover {
+    background-color: #111;
+}
+
+.active a{
+    background-color: rgb(228, 116, 180);
+}
