@@ -1,5 +1,5 @@
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;
 }
 
 code{
@@ -22,13 +22,11 @@ code{
     vertical-align: baseline!important;
     width: auto!important;
     box-sizing: content-box!important;
-    font-family: Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;
     font-weight: 400!important;
     font-style: normal!important;
     font-size: .99em!important;
     min-height: inherit!important;
     min-height: auto!important;
-    white-space: nowrap;
 }
 
 .plane{
