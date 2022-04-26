@@ -9,12 +9,14 @@
 
     --offset-top: 45px;
     --offset-width: 275px;
+    
+    --font-sofia: sofia-pro,sans-serif,arial;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: arial;
+    font-family: var(--font-sofia);
 }
 
 .NavBar{
