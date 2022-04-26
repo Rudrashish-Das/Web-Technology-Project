@@ -157,7 +157,7 @@ blockquote {
 
 .codeQuote {
     text-align: left; 
-    width: 70%; 
+    width: 800px; 
     height: 60px;
     margin: 0 0;
 }
@@ -219,4 +219,18 @@ blockquote {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+}
+
+@media (max-width: 500px){
+    :root{
+        --offset-width: 150px;
+    }
+
+    .sidebar h2{
+        font-size: 20px;
+    }
+
+    .wrapper .sidebar a{
+        font-size: 15px;
+    }
 }
