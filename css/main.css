@@ -83,11 +83,11 @@ blockquote {
 }
 
 .sidebar{
-    height: 100vh; /* Full-height: remove this if you want "auto" height */
-    width: var(--offset-width); /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 0.5; /* Stay on top */
-    top: var(--offset-top); /* Stay at the top */
+    height: 100vh;
+    width: var(--offset-width); 
+    position: fixed;
+    z-index: 0.5; 
+    top: var(--offset-top); 
     left: 0;
     background-color: var(--light-color);
     padding-top: 5px;
