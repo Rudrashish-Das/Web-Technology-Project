@@ -45,3 +45,21 @@ code{
 .string{
     color: rgb(255, 200, 0)!important;
 }
+
+@media (max-width: 700px){
+    code{
+        font-size: .70em!important;
+    }
+}
+
+@media (max-width: 500px){
+    code{
+        font-size: .55em!important;
+    }
+}
+
+@media (max-width: 400px){
+    code{
+        font-size: .35em!important;
+    }
+}
