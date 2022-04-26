@@ -9,7 +9,7 @@
 
     --offset-top: 45px;
     --offset-width: 275px;
-    
+
     --font-sofia: sofia-pro,sans-serif,arial;
 }
 
@@ -83,11 +83,11 @@ blockquote {
 }
 
 .sidebar{
-    height: 100vh;
-    width: var(--offset-width); 
-    position: fixed;
-    z-index: 0.5; 
-    top: var(--offset-top); 
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
+    width: var(--offset-width); /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0.5; /* Stay on top */
+    top: var(--offset-top); /* Stay at the top */
     left: 0;
     background-color: var(--light-color);
     padding-top: 5px;
@@ -127,9 +127,21 @@ blockquote {
     background-color: white;
 }
 
-a.anchor {
+.anchor {
     display: block;
     position: relative;
     top: -50px;
-    /* visibility: hidden; */
+    visibility: hidden;
+}
+
+.SiteTitle{
+    background-color: var(--light-color);
+    margin-bottom: 15px;
+}
+
+.SiteTitle h1{
+    padding: 10px;
+    padding-left: 30px;
+    align-self: center; 
+    font-size: 50px;
 }

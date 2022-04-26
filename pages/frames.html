@@ -33,13 +33,15 @@
             <a href="#">About</a>
         </div>
         <div class="content">
-            <h1 style="align-self: center; font-size: 50px;">Frames & iframes</h1>
-            <p>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized into rows and columns.</p>
+            <div class="SiteTitle">
+                <h1>Frames & Iframes</h1>
+            </div>
+            <p style="margin-bottom: 10px;">HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized into rows and columns.</p>
             <section> 
                 <a class="anchor" name="disadvantages-of-frames"></a>
-                <h2>Disadvantages of Frames</h2>
-                <p>There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −</p>
-                <ul class="list">
+                <h2 style="margin-bottom: 10px;">Disadvantages of Frames</h2>
+                <p style="margin-bottom: 10px;">There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −</p>
+                <ul class="list" style="margin-bottom: 10px;">
                     <li><p>Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.</p></li>
                     <li><p>Sometimes your page will be displayed differently on different computers due to different screen resolution.</p></li>
                     <li><p>The browser's <i>back</i> button might not work as the user hopes.</p></li>
@@ -48,14 +50,33 @@
             </section>
             <section>
                 <a class="anchor"name="creating-frames"></a>
-                <h2>Creating Frames</h2>
+                <h2 style="margin-bottom: 10px;">Creating Frames</h2>
                 <p>To use frames on a page we use &lt;frameset&gt; tag instead of &lt;body&gt; tag. The &lt;frameset&gt; tag defines, how to divide the window into frames. The <b>rows</b> attribute of &lt;frameset&gt; tag defines horizontal frames and <b>cols</b> attribute defines vertical frames. Each frame is indicated by &lt;frame&gt; tag and it defines which HTML document shall open into the frame.</p>
                 
                 <blockquote><p><b>Note</b> − The &lt;frame&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
             </section>
+            <h3 style="margin-left: 3%; margin-bottom: 10px;">Example Code:</h3>
             
-            <img src="../image/test.png">
-            <img src="../image/test.png">
+            <div class="code1">
+                <iframe src="../pages/secondary/frames/frames_code.html" width="100%" height="100%"></iframe>
+            </div>
+
+            <h3 style="margin: 10px 0px; margin-left: 3%;">Example Output:</h3>
+
+            <div style="margin: 0 auto; width: 90%; height: 550px;">
+                <div style="height: 30%;">
+                    <iframe src="https://responsivedesign.is/articles/xframe-options/" width="100%" height="100%"></iframe>
+                </div>
+                <div style="height: 60%;">
+                    <iframe src="https://kiitee.kiit.ac.in/" width="100%" height="100%"></iframe>
+                </div>
+                <div style="height: 30%;">
+                    <iframe src="https://www.ndtv.com/" width="100%" height="100%"></iframe>
+                </div>
+
+            </div>
+            <!-- <img src="../image/test.png">
+            <img src="../image/test.png"> -->
 
         </div>
     </div>

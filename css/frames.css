@@ -1,1 +1,10 @@
-nothings
+.code1{
+    height: 290px;
+    width: 90%;
+    align-self: baseline;
+    margin: 0 auto;
+}
+
+/* .codeframe .code1{
+} */
+
