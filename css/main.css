@@ -75,7 +75,8 @@ blockquote {
     margin-top: var(--offset-top);
     padding: 13px 15px 12px;
     margin-left: calc(var(--offset-width) + 2%);
-    width:78%;
+    margin-right: 2%;
+    width: 100hw;
 }
 
 .wrapper{
