@@ -21,32 +21,244 @@
     <div class="wrapper">
         <div class="sidebar">
             <h2 class="card">Table of Contents</h2>
-            <a href="#heading-1">Heading 1</a>
-            <a href="#heading-2">Heading 2</a>
-            <a href="#">HLD</a>
-            <a href="#">HLD</a>
+            <a href="#heading-1">What is CSS </a>
+            <a href="#heading-2"> Types of CSS </a>
+            <a href="#heading-3"> CSS Selectors  </a>
+            <a href="#heading-4"> Fonts and Colours  </a>
         </div>
         <div class="content">
             <div class="SiteTitle">
                 <h1>Cascading Style Sheets</h1>
             </div>
-            <p>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized into rows and columns.</p>
+            <p style="margin-bottom: 10px;"> CSS (Cascading Style Sheets) is what makes web pages look good and presentable.
+                It’s an essential part of modern web development and a must-have skill for any web designer and developer
+                .</p>
             <section> 
                 <a class="anchor" name="heading-1"></a>
-                <h2>Heading 1</h2>
-                <p>BLAH BLAH BLAH</p>
+                <h2 style="margin-bottom: 10px;" > CSS </h2>
+                <p style="margin-bottom: 10px;" > CSS stands for Cascading Style Sheets
+                    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                    CSS saves a lot of work. It can control the layout of multiple web pages all at once 
+                </p>
             </section>
             <section>
-                <a class="anchor"name="heading-2"></a>
-                <h2>Heading 2</h2>
-                <p> &lt;frameset&gt;  &lt;body&gt;  &lt;frameset&gt;. The <b>rows</b> attribute of &lt;frameset&gt;</p>
                 
-                <blockquote><p><b>Note</b> − some note</p></blockquote>
+                <h2 style="margin-bottom: 10px;" > Why Use CSS </h2>
+                <p style="margin-bottom: 10px;" > CSS is used to define styles for your web pages,
+                     including the design, layout and variations in display for different devices and screen sizes. </p>
+                
+                <blockquote><p><b> An exampel of CSS  </b> </p></blockquote>
             </section>
-            <img src="../image/test.png">
-            <img src="../image/test.png">
+            <img src="../image/code.png" width="500" height="600" >
 
-        </div>
+
+            <a class="anchor"name="heading-2"></a> 
+            <h2 style="margin-bottom: 10px;" > Types of CSS </h2>
+           <p style="margin-bottom: 10px;" > Let’s start with learning how we can include CSS in our projects. There are typically three ways we do that. </p> 
+           
+           <h2 style="margin-bottom: 10px;" > Inline CSS </h2>
+           <p style="margin-bottom: 10px;" > First off, we can include CSS directly in our HTML elements.
+                For this, we make use of the style attribute and then we provide properties to it. </p>
+
+        
+                    <p style="margin-bottom: 10px;" >
+                        
+                        <blockquote class="codeQuote" style="height: 75px">
+
+                            <p style="padding-top:5px;">   &lt;h1 style="color: hotpink"&gt; Hello world! </p> 
+                               
+                        </blockquote> 
+
+            <p style="margin-bottom: 10px;" > Here we’re giving it the property of color, and setting the value to hotpink, which results in the following: </p>
+                
+            <blockquote class="codeQuote" style="height: 75px">
+                <p>
+                    <h1 style="color: hotpink"> Hello world! </h1> 
+                </p>
+            </blockquote>
+           <p style="margin-bottom: 10px;" > We can also set multiple properties inside the style tag if we wanted.
+                However, I don’t want to continue down this path, as things start to get messy if our HTML is cluttered with lots of CSS inside it. </p>  
+             <p style="margin-bottom: 10px;" > This is why the second method to include CSS was introduced </p>
+
+             <h2 style="margin-bottom: 10px;" > Internal CSS </h2> 
+             <p style="margin-bottom: 10px;"> The other way to include CSS is using the style element in the head section of the HTML document.
+                  This is called internal styling. </p>
+
+                  <blockquote class="codeQuote" style="height: 190px"  >
+                    <p style="padding-top:5px;">&lt;head&gt;</p>
+                        <p style="padding-top:5px;"> &lt;style&gt;</p>
+                    <p style="padding-top:5px;"> h1 {  </p>
+                        <p style="padding-top:5px;"> color: blue; </p>
+                            <p style="padding-top:5px;"> }  </p>
+                            <p style="padding-top:5px;"> &lt;/style&gt;</p>
+                            
+                            <p style="padding-top:5px;">&lt;/head&gt;</p>
+                </blockquote>
+                <p style="margin-bottom: 10px;"> In the style element, we can give the styling to our HTML elements by selecting the element(s) and provide styling attributes.
+                     Just like we applied thecolorproperty to the h1 element above. </p>
+
+                <h2 style="margin-bottom: 10px;" > Extrenal CSS  </h2>
+                <p style="margin-bottom: 10px;" > The third and most recommended way to include CSS is using an external stylesheet.
+                     We create a stylesheet with a .css extension and include its link in the HTML document, like this: </p>
+            
+                     <blockquote class="codeQuote" style="height: 110px">
+                        <p style="padding-top:5px;">&lt;head&gt;</p>
+                            <p style="padding-top:5px;"> &lt;link rel="stylesheet" href="style.css"&gt;</p>
+                                
+                                <p style="padding-top:5px;">&lt;/head&gt;</p>
+                    </blockquote>
+
+                <p style="margin-bottom: 10px;" > In the code above, we have included the link of style.css file using the link element.
+                     We then write all of our CSS in a separate stylesheet called style.css so that it’s easily manageable. </p>
+
+                     <blockquote class="codeQuote" style="height: 110px">
+                        <p style="padding-top:5px;"> h1 { </p>
+                            <p style="padding-top:5px;"> color: blue; </p>
+                                
+                                <p style="padding-top:5px;"> } </p>
+                    </blockquote> 
+
+                 <p style="margin-bottom: 10px;" > This stylesheet can also be imported into other HTML files, so this is great for reusability.  </p>   
+
+                 <a class="anchor"name="heading-3"></a>
+
+                 <h2 style="margin-bottom: 10px;" > CSS Selectors </h2>
+
+                 <p style="margin-bottom: 10px;"> As we discussed earlier, CSS is a design language which is used to style HTML elements. And in order to style elements, you first have to select them. You’ve already seen a glimpse of how this works, but let’s dive a bit deeper into CSS selectors, and look at three different ways you can select HTML elements. </p>
+                  
+                 <h2 style="margin-bottom: 10px;"> 1. Element </h2>
+
+                 <p style="margin-bottom: 10px;"> The first way to select an HTML element is by simply using the name, which is what we did above. <br> Let’s see how it works: </p>
+                
+                 <blockquote class="codeQuote" style="height: 250px">
+
+                    <p style="padding-top:5px;"> h1 {    </p> 
+                        <p style="padding-top:5px;">     font-size: 20px;   </p>
+                        <p style="padding-top:5px;"> }</p>
+                        <p style="padding-top:5px;"> p { </p>
+                            <p style="padding-top:5px;">     color: green; </p>
+                            <p style="padding-top:5px;"> } </p>
+                            <p style="padding-top:5px;"> div {  </p>
+                                <p style="padding-top:5px;">     margin: 10px;   </p>
+                                <p style="padding-top:5px;"> } </p>
+                       
+                </blockquote>
+                
+                <p style="margin-bottom: 10px;"> The example above is almost self-explanatory. We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element. </p>
+                
+                <h2 style="margin-bottom: 10px;"> 2. Class </h2>
+
+                <p style="margin-bottom: 10px;"> Another way of selecting HTML elements is by using the class attribute. In HTML, we can assign different classes to our elements. Each element can have multiple classes, and each class can also be applied to multiple elements as well. </p>
+
+                <p style="margin-bottom: 10px;"> Let’s see it in action: </p> 
+
+                <blockquote class="codeQuote" style="height: 95px">
+
+                    <p style="padding-top:5px;"> &lt;div class='container'&gt; </p>
+                    <p style="padding-top:5px;"> &lt;h1> This is heading &lt;h1&gt; </p>
+                    <p style="padding-top:5px;"> &lt;/div&gt; </p> 
+                </blockquote> 
+                
+                <p style="margin-bottom: 10px;">    </p> 
+                <p style="margin-bottom: 10px;">    </p>
+
+                <blockquote class="codeQuote" style="height: 90px">
+
+                    <p style="padding-top:5px;"> .container { </p>
+                        <p style="padding-top:5px;">     margin: 10px; </p> 
+                        <p style="padding-top:5px;">  } </p>
+                       
+                </blockquote> 
+
+                <p style="margin-bottom: 10px;"> In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a 10px margin. </p>
+                <h2 style="margin-bottom: 10px;"> 3. ID                </h2>
+                <p style="margin-bottom: 10px;">  Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element. </p>
+                
+                <blockquote class="codeQuote" style="height: 90px">
+
+                    <p style="padding-top:5px;"> &lt;div&gt;  </p> 
+                    <p style="padding-top:5px;"> &lt;p id='para1'&gt; This is a paragraph &lt;/p&gt;  </p>
+                    <p style="padding-top:5px;"> &lt;/div&gt; </p>
+                
+                    
+                </blockquote>  
+
+                 
+                <p style="margin-bottom: 10px;">    </p> 
+                <p style="margin-bottom: 10px;">    </p>
+
+                <blockquote class="codeQuote" style="height: 110px">
+
+                    <p style="padding-top:5px;"> #para1 {  </p> 
+                        <p style="padding-top:5px;">     color: green; </p>
+                        <p style="padding-top:5px;">     font-size: 16px; </p>
+                        <p style="padding-top:5px;"> } </p>
+                       
+                </blockquote> 
+                <p style="margin-bottom: 10px;">    </p>
+                <p style="margin-bottom: 10px;"> The example above displays how we assign an ID to the paragraph element and later use the ID selector in the stylesheet to select the paragraph and apply the style to it.</p>
+              
+                <a class="anchor"name="heading-4"> </a> 
+                <h2 style="margin-bottom: 10px;"> Fonts and Colours </h2>
+                 
+                <p style="margin-bottom: 10px;"> CSS provides us with literally hundreds of options for playing around with fonts and colors and making our HTML elements look pretty. We can choose from two types of font family names: </p>
+                <h2 style="margin-bottom: 10px;"> 1. Generic Family: </h2>
+                <p style="margin-bottom: 10px;"> a group of font families with a similar look (like ‘Serif’ or ‘Monospace’) </p>
+                <h2 style="margin-bottom: 10px;"> 2. Font Family: </h2>
+                <p style="margin-bottom: 10px;">  a specific font family (like ‘Times New Roman’ or ‘Arial’) </p>
+
+                <p style="margin-bottom: 10px;"> </p>
+
+                <p style="margin-bottom: 10px;"> For colors, we can use predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. </p>
+
+                <blockquote class="codeQuote" style="height: 150px">
+
+                    <p style="padding-top:5px;"> &lt;div class='container'&gt; </p> 
+                    <p style="padding-top:5px;">      &lt;h1 class='heading1'&gt; </p>
+                    <p style="padding-top:5px;">        CSS is Coooooool!!!!   </p>
+                
+                    <p style="padding-top:5px;">       &lt;/h1&gt; </p>
+                    <p style="padding-top:5px;"> &lt;/div&gt; </p>
+                
+                </blockquote> 
+                <p style="margin-bottom: 10px;">    </p> 
+                <p style="margin-bottom: 10px;">    </p>
+
+                <blockquote class="codeQuote" style="height: 280px">
+
+                    <p style="padding-top:5px;"> .container {   </p> 
+                    <p style="padding-top:5px;">     width: 500px;   </p>
+                    <p style="padding-top:5px;">     height: 100px;  </p>
+                
+                    <p style="padding-top:5px;">     background-color: lightcyan; </p>
+                    <p style="padding-top:5px;">    text-align: center;  </p>
+                    <p style="padding-top:5px;"> } </p>
+                    <p style="padding-top:5px;">    </p>
+                    <p style="padding-top:5px;"> .heading1 {   </p>
+                    <p style="padding-top:5px;">     font-family: 'Courier New';  </p>
+                    <p style="padding-top:5px;">     color: tomato;  </p>
+                    <p style="padding-top:5px;"> } </p>
+                
+                       
+                </blockquote> 
+
+                <p style="margin-bottom: 10px;">  </p>  
+
+                <p style="margin-bottom: 10px;"> The output of the Code above will be</p>
+               
+                <img src="../image/code4.jpg"  >  </p>
+
+                <p style="margin-bottom: 10px;"> As you can see in the above example, we have a div element with the class of container. Inside this div, there is an h1 tag with some text inside it. </p>
+                <p style="margin-bottom: 10px;"> In the stylesheet, we select the container class and set its width, height, background-color, and text-align. </p>
+                <p style="margin-bottom: 10px;"> Finally, we select the .heading1 class — which is applied to the h1 tag — and give it the attributes of font-family and color. </p>
+                
+                <h2 style="margin-bottom: 10px;"> Conclusion </h2>
+                <p style="margin-bottom: 10px;"> CSS is a crucial component of every website. You can use it to simplify your HTML, and ultimately reduce the complexity of your HTML files.</p>
+                <p style="margin-bottom: 10px;"> There are tons of different ways that CSS can be used. But we are keeping this article simple and short. </p> 
+                <p style="margin-bottom: 10px;"> More advanced yse of CSS can be done to make responsive design. And lot more cool stuffs.  </p>
+                
+        
+            </div>
     </div>
 </body>
 </html>
