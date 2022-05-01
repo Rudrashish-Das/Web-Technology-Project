@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/frames.css">
+</head>
+<body>
+    <div>
+        <ul class="NavBar">
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="../pages/forms.html">Forms</a></li>
+            <li><a href="../pages/frames.html">Frames</a></li>
+            <li><a href="../pages/css.html">CSS</a></li>
+            <li style="float:right"><a href="../pages/abouts.html">About</a></li>
+        </ul>
+    </div>
+    <!-- YOUR CODE HERE -->
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 class="card">Table of Contents</h2>
+            <a href="#heading-1">HTML Forms</a>
+            <a href="#heading-2">Form Attribute</a>
+            <a href="#heading-3">Form Elements</a>
+            <a href="#heading-4">Input Types</a>
+            <a href="#heading-5">Input Attribute</a>
+        </div>
+        <div class="content">
+            <div class="SiteTitle">
+                <h1>Form Design</h1>
+            </div>
+            <p>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized into rows and columns.</p>
+            <br>
+            <section> 
+                <a class="anchor" name="heading-1"></a>
+                <h2>HTML FORMS</h2>
+                <br>
+                <h3>The &lt INPUT &gt Elements</h3>
+                <br>
+                <p>
+                    The HTML &lt input &gt element is the most used form element.
+                    <br>
+                    An &lt input &gt element can be displayed in many ways, depending on the type attribute.
+                </p>
+                <br>
+            <br>
+                <h3> TEXT FIELDS </h3>
+                <br>
+                <p> 
+                    The &ltinput type = "text"&gt defines a single-line input field for text input.
+                    <br>
+                    <blockquote><p><b>Note: The form itself is not visible. Also note that the default width of an input field is 20 characters.</b> − </p></blockquote>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code1.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code1.jpg" width="900px" height="355px"></iframe>
+                        </div>   
+                    </div>
+                </p>
+                <br>
+                <h3> The &ltLABEL&gt Element </h3>
+                <br>
+                <p>
+                    Notice the use of the &ltlabel&gt  element in the example above.
+                    <br>
+                        The &ltlabel&gt tag defines a label for many form elements.
+                        <br>
+                        The &ltlabel&gt element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+                        <br>
+                        The &ltlabel&gt element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &ltlabel&gt element, it toggles the radio button/checkbox.
+                        <br>
+                        The for attribute of the &ltlabel&gt tag should be equal to the id attribute of the &ltinput&gt element to bind them together.
+                </p>
+                <br>
+                <h3> RADIO BOTTONS </h3>
+                <br>
+                <p>
+                    The &lt input type="radio" &gt defines a radio button.
+                    <br>
+                    Radio buttons let a user select ONE of a limited number of choices.
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code2.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code2.jpg" width="950px" height="430px"></iframe>
+                        </div>   
+                    </div>
+                </p>
+                <br>
+                <h3> CHECKBOXES </h3>
+                <br>
+                <p>
+                    The &lt input type="checkbox"  &gt defines a checkbox.
+                    <br>
+                    Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code3.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code3.jpg" width="900px" height="420px"></iframe>
+                        </div>   
+                    </div>
+                </p>
+                <br>
+                <h3> THE SUBMIT BUTTON </h3>
+                <br>
+                <P>
+                    The &lt input type="submit" &gt defines a button for submitting the form data to a form-handler.
+                    <br>
+                    The form-handler is typically a file on the server with a script for processing input data.
+                    <br>
+                    The form-handler is specified in the form's action attribute.
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code4.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code4.jpg" width="900px" height="400px"></iframe>
+                        </div>   
+                    </div>
+                </P>
+                <br>
+                <h3> THE NAME ATTRIBUTE FOR &ltINPUT&gt </h3>
+                <br>
+                <p>
+                    Notice that each input field must have a name attribute to be submitted.
+                    <br>
+                    If the name attribute is omitted, the value of the input field will not be sent at all.
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code5.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code5.jpg" width="920px" height="400px"></iframe>
+                        </div>   
+                    </div>
+                </p>
+                
+            </section>
+            <section>
+                <a class="anchor"name="heading-2"></a>
+                <BR>
+                <h2> FORM ATTRIBUTE </h2>
+                <br>
+                <h3> THE ACTION ATTRIBUTE </h3>
+                <br>
+                <P>
+                    The action attribute defines the action to be performed when the form is submitted.
+                    <br>
+                    Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+                    <br>    
+                    In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code6.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code6.jpg" width="920px" height="400px"></iframe>
+                        </div>   
+                    </div>
+                </P>
+                <br>
+                <h3>THE TARGET ATTRIBUTE </h3>
+                <br>
+                <p>
+                    The target attribute specifies where to display the response that is received after submitting the form.
+                    <br>
+                    The method attribute specifies the HTTP method to be used when submitting the form data.
+                    <br>
+                    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+                    <br>
+                    The default HTTP method when submitting form data is GET. 
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code7.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+        
+                        <div >
+                            <iframe src="..\image\127_297/code7.jpg" width="920px" height="370px"></iframe>
+                        </div>   
+                    </div>
+                </p>
+                <br>
+                <h3>THE METHOD ATTRIBUTE </h3>
+                <P>
+                <BR>
+                    The method attribute specifies the HTTP method to be used when submitting the form data.
+                    <BR>
+                    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+                    <BR>
+                    The default HTTP method when submitting form data is GET. 
+                </P>
+                <blockquote><p><b>Note
+                <P>
+                    Notes on GET:
+                    <BR>
+                        <BR>
+                    => Appends the form data to the URL, in name/value pairs
+                    <BR>
+                    => NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+                    <BR>
+                    => The length of a URL is limited (2048 characters)
+                    <BR>
+                    => Useful for form submissions where a user wants to bookmark the result
+                    <BR>
+                    => GET is good for non-secure data, like query strings in Google
+                    <BR>    
+                        <BR>
+                    Notes on POST:
+                    <BR>
+                        <BR>
+                    => Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+                    <BR>
+                    => POST has no size limitations, and can be used to send large amounts of data.
+                    <BR>
+                    => Form submissions with POST cannot be bookmarked
+                </P></b> − </p></blockquote>
+                </section>
+                <section>
+                    <a class="anchor"name="heading-3"></a>
+                    <br>
+                    <h2>FORM ELEMENTS</h2>
+                    <br>
+                    <h3>THE &LTSELECT&GT ATTRIBUTE</h3>
+                    <br>
+                    <p>
+                        The &ltoption&gt elements defines an option that can be selected.
+                        <br>
+                            By default, the first item in the drop-down list is selected.
+                            <br>
+                            To define a pre-selected option, add the selected attribute to the option:
+                            <br>
+                            <br>
+                            <div style="display: flex; gap: 1px; margin-left: -10px;">
+                                <div class="card buttonCard">
+                                        <a href="./secondary/forms/code8.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                            <span class="popuptext">Run Code</span></a>
+                                </div>
+                
+                                <div >
+                                    <iframe src="..\image\127_297/code8.jpg" width="920px" height="430px"></iframe>
+                                </div>   
+                            </div>
+                    </p>
+                    <br>
+                    <h3>THE &ltTHE TEXT AREA ELEMENT&GT </h3>
+                    <br>
+                    <p>
+                        The rows attribute specifies the visible number of lines in a text area.
+                        <br>
+                        The cols attribute specifies the visible width of a text area.
+                        <br>
+                        This is how the HTML code above will be displayed in a browser:
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code9.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+            
+                            <div >
+                                <iframe src="..\image\127_297/code9.jpg" width="920px" height="320px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>THE &LTFIELDSET&GT AND  &LTLEGEND&GT ELEMENTS</h3>
+                    <BR>
+                    <P>
+                        The &ltfieldset&gt element is used to group related data in a form.
+
+                            The &ltlegend&gt element defines a caption for the &ltfieldset&gt element.
+                            <br>
+                            <br>
+                            <div style="display: flex; gap: 1px; margin-left: -10px;">
+                                <div class="card buttonCard">
+                                        <a href="./secondary/forms/code9.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                            <span class="popuptext">Run Code</span></a>
+                                </div>
+                
+                                <div >
+                                    <iframe src="..\image\127_297/code9.jpg" width="920px" height="350px"></iframe>
+                                </div>   
+                            </div>
+                    </P>
+                    <br>
+                    <h3>THE &LTDATALIST&GT ELEMENTS</h3>
+                    <br>
+                    <p>
+                        The &ltdatalist&gt element specifies a list of pre-defined options for an &ltinput&gt element.
+                            <br>
+                            Users will see a drop-down list of the pre-defined options as they input data.
+                            <br>
+                            The list attribute of the &ltinput&gt element, must refer to the id attribute of the &ltdatalist&gt element.
+                            <br>
+                            <br>
+                            <div style="display: flex; gap: 1px; margin-left: -10px;">
+                                <div class="card buttonCard">
+                                        <a href="./secondary/forms/code11.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                            <span class="popuptext">Run Code</span></a>
+                                </div>
+                
+                                <div >
+                                    <iframe src="..\image\127_297/code11.jpg" width="920px" height="470px"></iframe>
+                                </div>   
+                            </div>
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <a class="anchor"name="heading-4"></a>
+                    <h2>INPUT TYPES</h2>
+                    <br>
+                    <h3>INPUT TYPE SUBMIT</h3>
+                    <br>
+                    <p>
+                        &ltinput type="submit"&gt defines a button for submitting form data to a form-handler.
+                        <br>
+                        The form-handler is typically a server page with a script for processing input data.
+                        <br>
+                        The form-handler is specified in the form's action attribute:
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code12.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code12.jpg" width="920px" height="440px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE RADIO</h3>
+                    <br>
+                    <p>
+                        &ltinput type="radio"&gt defines a radio button.
+                        <br>
+                        Radio buttons let a user select ONLY ONE of a limited number of choices:
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code13.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code13.jpg" width="920px" height="440px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE COLOUR</h3>
+                    <br>
+                    <p>
+                        The &ltinput type="color"&gt is used for input fields that should contain a color.
+                        <br>
+                        Depending on browser support, a color picker can show up in the input field.
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code14.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code14.jpg" width="920px" height="400px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE DATE</h3>
+                    <br>
+                    <p>
+                        The &ltinput type="date"&gt is used for input fields that should contain a date.
+                        <br>
+                        Depending on browser support, a date picker can show up in the input field.
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code15.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code15.jpg" width="920px" height="400px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE EMAIL</h3>
+                    <br>
+                    <p>
+                        The &ltinput type="email"&gt is used for input fields that should contain an e-mail address.
+                        <br>
+                        Depending on browser support, the e-mail address can be automatically validated when submitted.
+                        <br>
+                        Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code16.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code16.jpg" width="920px" height="400px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE HIDDEN</h3>
+                    <br>
+                    <p>
+                        The &ltinput type="hidden"&gt defines a hidden input field (not visible to a user).
+                        <br>
+                        A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+                        <br>
+                        A hidden field often stores what database record that needs to be updated when the form is submitted.
+                        <br>
+                        <blockquote><p><b>Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!</b> − </p></blockquote>
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code17.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+                        <div >
+                            <iframe src="..\image\127_297/code17.jpg" width="920px" height="400px"></iframe>
+                        </div>   
+                    </div>
+                    </p>
+                    <br>
+                    <h3>INPUT TYPE URL</h3>
+                    <br>
+                    <p>
+                        The &ltinput type="url"&gt is used for input fields that should contain a URL address.
+                        <br>
+                        Depending on browser support, the url field can be automatically validated when submitted.
+                        <br>
+                        Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code18.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code18.jpg" width="920px" height="370px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <a class="anchor"name="heading-5"></a>
+                    <h2>INPUT ATTRIBUTES</h2>
+                    <br>
+                    <h3>INPUT READONLY ATTRIBUTE</h3>
+                    <br>
+                    <p>
+                        The input readonly attribute specifies that an input field is read-only.
+                        <br>
+                        A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+                        <br>
+                        The value of a read-only input field will be sent when submitting the form!
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code19.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code19.jpg" width="920px" height="400px"></iframe>
+                            </div>   
+                        </div>
+                    </p>
+                    <br>
+                    <h3>THE STEP ATTRIBUTE</h3>
+                    <br>
+                    <p>
+                        The input step attribute specifies the legal number intervals for an input field.
+                        <br>
+                        Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+                        <br>
+                        The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.
+                        <br>
+                        <blockquote><p><b>Tip: This attribute can be used together with the max and min attributes to create a range of legal values.</b> − </p></blockquote>
+                    <br>
+                    <br>
+                    <div style="display: flex; gap: 1px; margin-left: -10px;">
+                        <div class="card buttonCard">
+                                <a href="./secondary/forms/code20.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                    <span class="popuptext">Run Code</span></a>
+                        </div>
+                        <div >
+                            <iframe src="..\image\127_297/code20.jpg" width="920px" height="370px"></iframe>
+                        </div>   
+                    </div>
+                    </p>
+                    <br>
+                    <h3>THE AUTOCOMPLETE ATTRIBUTE</h3>
+                    <br>
+                    <p>
+                        The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+                        <br>
+                        Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+                        <br>
+                        The autocomplete attribute works with &ltform&gt and the following &ltinput&gt types: text, search, url, tel, email, password, datepickers, range, and color.
+                        </p>
+                        <br>
+                        <br>
+                        <div style="display: flex; gap: 1px; margin-left: -10px;">
+                            <div class="card buttonCard">
+                                    <a href="./secondary/forms/code21.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                                        <span class="popuptext">Run Code</span></a>
+                            </div>
+                            <div >
+                                <iframe src="..\image\127_297/code21.jpg" width="920px" height="510px"></iframe>
+                            </div>   
+                        </div>
+                        <br>
+                        <br>
+                </section>
+        </div>
+    </div>
+</body>
+</html>
