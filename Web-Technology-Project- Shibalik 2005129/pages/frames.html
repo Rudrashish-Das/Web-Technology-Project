@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames in HTML</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/frames.css">
+</head>
+<body>
+    <div>
+        <ul class="NavBar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/forms.html">Forms</a></li>
+            <li class="active"><a href="../pages/frames.html">Frames</a></li>
+            <li><a href="../pages/css.html">CSS</a></li>
+            <li style="float:right"><a href="../pages/abouts.html">About</a></li>
+        </ul>
+    </div>
+    <!-- YOUR CODE HERE -->
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 class="card">Table of Contents</h2>
+            <a href="#creating-frames">Creating Frames</a>
+            <a href="#example-1">Code 1</a>
+            <a href="#example-2">Code 2</a>
+            <a href="#attributes-of-frameset-tag">Attributes of Frameset tag</a>
+            <a href="#attributes-of-frame-tag">Attributes of Frame tag</a>
+            <!-- <div class="subTable">
+                <a href="#name-a">name</a>
+                <a href="#src-a">src</a>
+            </div> -->
+            <a href="#advantages-of-frames">Advantages of Frames</a>
+            <a href="#disadvantages-of-frames">Disadvantages of Frames</a>
+        </div>
+        <div class="content">
+            <div class="SiteTitle">
+                <h1>Frames in HTML</h1>
+            </div>
+            <p style="margin-bottom: 10px;">HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized into rows and columns.</p>
+            <section>
+                <a class="anchor"name="creating-frames"></a>
+                <h2 style="margin-bottom: 10px;">Creating Frames</h2>
+
+                <p>Instead of using body tag, use frameset tag in HTML to use frames in web browser. The frameset tag is used to define how to divide the browser. Each frame is indicated by frame tag and it basically defines which HTML document shall open into the frame. To define the horizontal frames use <b>row</b> attribute of frame tag in HTML document and to define the vertical frames use <b>col</b> attribute of frame tag in HTML document.</p>
+                
+                <blockquote><p><b>Note</b> − The &lt;frame&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
+            </section>
+            <a class="anchor" name="example-1"></a>
+            <p style="margin-left: 3%; margin-bottom: 10px;"><b style="font-size: 19px;">Example Code:</b><p>
+            <div style="display: flex; gap: 1px; margin-left: -10px;">
+                
+                <div class="card buttonCard">
+                        <a href="./secondary/frames/code1_out.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                            <span class="popuptext">Run Code</span></a>
+                </div>
+
+                <div class="code1">
+                    <iframe src="../pages/secondary/frames/frames_code.html" width="100%" height="100%"></iframe>
+                </div>   
+            </div>
+
+            <p style="margin: 10px 0px; margin-left: 3%;"><b style="font-size: 19px;">Example Output:</b> The above example basically used to create three horizontal frames: top, middle and bottom using row attribute of frameset tag and the noframe tag is used for those browser who doesn’t support noframe.</p>
+
+            <a class="anchor" name="example-2"></a>
+            <p style="margin: 10px 0px 10px 3%;"><b style="font-size: 19px;">Example Code:</b> This example illustrates the <b>col</b> attribute of frameset tag.<p>
+
+            <div style="display: flex; gap: 1px; margin-left: -10px;">
+                
+                <div class="card buttonCard">
+                        <a href="./secondary/frames/code2_out.html" class="popup" target="_blank"><img class="play" src="../image/play.webp">
+                            <span class="popuptext">Run Code</span></a>
+                </div>
+
+                <div class="code1">
+                    <iframe src="../pages/secondary/frames/frames_code2.html" width="100%" height="100%"></iframe>
+                </div>  
+            </div>
+
+            <p style="margin: 10px 0px; margin-left: 3%;"><b style="font-size: 19px;">Example Output:</b> The above example basically used to create three vertical frames: left, center and right using col attribute of frameset tag.</p>
+
+            <a class="anchor" name="attributes-of-frameset-tag"></a>
+            <h2 style="margin: 10px 0;">Attributes of Frameset tag:</h2>
+            <ul>
+                <li><b>cols:</b> The cols attribute is used to create vertical frames in web browser. This attribute is basically used to define the no of columns and its size inside the frameset tag. The size or width of the column is set in the frameset in the following ways:
+                    <ul>
+                        <li> <p style="margin: 10px 0 10px 0;">Use absolute value in pixel.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset cols = "300, 400, 300"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                        </li>
+                        <li> <p style="margin: 10px 0 10px 0;">Use percentage value.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset cols = "30%, 40%, 30%"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                        </li>
+                        <li> <p style="margin: 10px 0 10px 0;">Use wild card values.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset cols = "30%, *, 30%"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                            <p>In the above example * will take the remaining percentage for creating vertical frame.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li style="margin: 10px 0;"><b>rows:</b> The rows attribute is used to create horizontal frames in web browser. This attribute is used to define no of rows and its size inside the frameset tag.<br>The size of rows or height of each row use the following ways:
+                    <ul>
+                        <li> <p style="margin: 10px 0 10px 0;">Use absolute value in pixel.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset rows = "300, 400, 300"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                        </li>
+                        <li> <p style="margin: 10px 0 10px 0;">Use percentage value.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset rows = "30%, 40%, 30%"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                        </li>
+                        <li> <p style="margin: 10px 0 10px 0;">Use wild card values.</p>
+                            <b style="margin: 10px 0;">Example:</b>
+                            <div style="margin:10px 0;">
+                                <blockquote class="codeQuote"><p>&lt;frameset rows = "30%, *, 30%"&gt;&lt;/frameset&gt;</p></blockquote>
+                            </div>
+                            <p>In the above example * will take the remaining percentage for creating vertical frame.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><p><b>border:</b> This attribute of frameset tag defines the width of border of each frames in pixels. Zero value is used for no border.<br></p>
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote"><p>&lt;frameset border = "4"&gt;&lt;/frameset&gt;</p></blockquote>
+                    </div>
+                </li>
+                <li style="margin: 10px 0;"><b>frameborder:</b> This attribute of frameset tag is used to specify whether the three-dimensional border should be displayed between the frames or not for this use two values 0 and 1, where 0 defines for no border and value 1 signifies for yes there will be border.
+                </li>
+                <li><b>framespacing:</b> This attribute of frameset tag is used to specify the amount of spacing between the frames in a frameset. This can take any integer value as an parameter which basically denotes the value in pixel.
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote"><p>&lt;framespacing = "20"&gt;</p></blockquote>
+                    </div>
+                    <p style="margin: 10px 0;">It means there will be 20 pixel spacing between the frames.</p>
+                </li>
+            </ul>
+
+            <a class="anchor" name="attributes-of-frame-tag"></a>
+            <h2 style="margin: 10px 0;">Attributes of Frame tag:</h2>
+            <ul>
+                <a class="anchor" name="name-a"></a>
+                <li><b>name:</b> This attribute is used to give names to the frame. It differentiate one frame from another. It is also used to indicate which frame a document should loaded into.
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote" style="height: 110px">
+                            <p>
+                                &lt;frame name = "top" src = "https://responsivedesign.is/articles/xframe-options/"&gt;</p>
+                                <p style="padding-top:5px;"> &lt;frame name = "main" src = "https://kiitee.kiit.ac.in/"&gt;</p>
+                            <p style="padding-top:5px;">    &lt;frame name = "bottom" src = "https://www.ndtv.com/"&gt;
+                            </p>
+                        </blockquote>
+                    </div>
+                </li>
+                <a class="anchor" name="src-a"></a>
+                <li><b>src:</b> This attribute in frame tag is basically used to define the source file that should be loaded into the frame.The value of src can be any url.
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote"><p>&lt;frame name = "left" src = "/html/left.html"&gt;</p></blockquote>
+                    </div>
+                    <p style="margin: 10px 0;">In the above example name of frame is left and source file will be loaded from “/html/left.html” in frame.</p>
+                </li>
+                <li><b>marginheight:</b> This attribute in frame tag is used to specify height of the spaces in pixels between the border and contents of top and bottom frame.
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote"><p>&lt;frame marginheight = "20"&gt;</p></blockquote>
+                    </div>
+                </li>
+                <li><b>scrollbar:</b> To control the appearance of scroll bar in frame use scrollbar attribute in frame tag. This is basically used to control the appearance of scrollbar. The value of this attribute can be yes, no, auto. Where the value no denotes there will be no appearance of scroll bar.
+                    <p style="margin: 10px 0;"><b>Example:</b></p>
+                    <div style="margin:10px 0;">
+                        <blockquote class="codeQuote"><p>&lt;frame scrollbar = "no"&gt;</p></blockquote>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="anchor" name="advantages-of-frames"></a>
+            <h2 style="margin: 10px 0;">Advantages:</h2>
+            <ul class="list">
+                <li>It allows the user to view multiple documents within a single Web page.</li>
+                <li>It load pages from different servers in a single frameset.</li>
+                <li>The older browsers that do not support frames can be addressed using the iframes tag.</li>
+                <li>The programmer does not require to update third party content.</li>
+            </ul>
+            <a class="anchor" name="disadvantages-of-frames"></a>
+            <h2 style="margin: 10px 0;">Disadvantages:</h2>
+            <ul class="list">
+                <li>Frames can make the production of website complicated.</li>
+                <li>A user is unable to bookmark any of the Web pages viewed within a frame.</li>
+                <li>The browser’s back button might not work as the user hopes.</li>
+                <li>The use of too many frames can put a high workload on the server.</li>
+                <li>Many old web browser doesn’t support frames.</li>
+                <li>Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.</li>
+                <li>Sometimes your page will be displayed differently on different computers due to different screen resolution.</li>
+                <li>The browser's back button might not work as the user hopes.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
