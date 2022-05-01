@@ -1,0 +1,65 @@
+*{
+    font-family: Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;
+}
+
+code{
+    background: 0 0!important;
+    border: 0!important;
+    bottom: auto!important;
+    float: none!important;
+    height: auto!important;
+    left: auto!important;
+    line-height: 1.2em!important;
+    margin: 0!important;
+    outline: 0!important;
+    overflow: hidden!important;
+    overflow-x: auto!important;
+    padding: 0!important;
+    position: static!important;
+    right: auto!important;
+    text-align: left!important;
+    top: auto!important;
+    vertical-align: baseline!important;
+    width: auto!important;
+    box-sizing: content-box!important;
+    font-weight: 400!important;
+    font-style: normal!important;
+    font-size: .99em!important;
+    min-height: inherit!important;
+    min-height: auto!important;
+}
+
+.plane{
+    color: rgb(0, 0, 0)!important;
+}
+
+.keyword{
+    font-weight: bold!important;
+    color: rgb(0, 246, 143)!important;
+}
+
+.property{
+    color: rgb(0, 133, 195)!important;
+}
+
+.string{
+    color: rgb(255, 200, 0)!important;
+}
+
+@media (max-width: 700px){
+    code{
+        font-size: .70em!important;
+    }
+}
+
+@media (max-width: 500px){
+    code{
+        font-size: .55em!important;
+    }
+}
+
+@media (max-width: 400px){
+    code{
+        font-size: .35em!important;
+    }
+}
